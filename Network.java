@@ -52,6 +52,7 @@ public class Network {
         this.userCount++;
         return true;
     }
+
     /** Makes the user with name1 follow the user with name2. If successful, returns true.
      *  If any of the two names is not a user in this network,
      *  or if the "follows" addition failed for some reason, returns false. */
@@ -103,7 +104,8 @@ public class Network {
         }
         return mostPopName;
     }
-/** Returns the number of times that the given name appears in the follows lists of all
+
+    /** Returns the number of times that the given name appears in the follows lists of all
      *  the users in this network. Note: A name can appear 0 or 1 times in each list. */
     private int followeeCount(String name) {
         int times = 0;
