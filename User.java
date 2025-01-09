@@ -106,10 +106,10 @@
     }
     /** Returns this user's name, and the names that s/he follows. */
     public String toString() {
-        String ans = name + " -> ";
+        String ans1 = name + " -> ";
         for (int i = 0; i < fCount; i++) {
-            ans = ans + follows[i] + " ";
+            ans1 = ans1 + follows[i] + " ";
         }
-        return ans;
+        return ans1;
     }
 }
